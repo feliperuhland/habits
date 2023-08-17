@@ -1,2 +1,2 @@
 # habits
-A habits x symptoms x behaviors tracker
+A check-in x symptoms x behaviors tracker

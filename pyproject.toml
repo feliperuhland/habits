@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "habits"
 version = "0.1.0"
-description = "A habits x symptoms x behaviors tracker"
+description = "A check-in x symptoms x behaviors tracker"
 authors = ["Felipe Ruhland <dev@feliperuhland.com>"]
 license = "GPL v3"
 readme = "README.md"
