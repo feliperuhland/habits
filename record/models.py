@@ -31,8 +31,7 @@ class CheckInSymptom(models.Model):
     check_in = models.ForeignKey(CheckIn, on_delete=models.RESTRICT)
 
     def __str__(self):
-        hard = "-hard" if self.exaggerated else ""
-        return f"{self.symptom}{hard}"
+        return f"Symptom: {self.id}"
 
 
 class CheckInBehavior(models.Model):
@@ -41,5 +40,4 @@ class CheckInBehavior(models.Model):
     check_in = models.ForeignKey(CheckIn, on_delete=models.RESTRICT)
 
     def __str__(self):
-        hard = "-hard" if self.exaggerated else ""
-        return f"{self.behavior}{hard}"
+        return f"Behavior: {self.id}"
