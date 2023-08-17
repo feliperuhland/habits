@@ -7,10 +7,16 @@ class SymptomInline(admin.TabularInline):
     model = models.CheckInSymptom
     autocomplete_fields = ["symptom"]
 
+    def get_extra(self, request, obj=None, **kwargs):
+        return 0
+
 
 class BehaviorInline(admin.TabularInline):
     model = models.CheckInBehavior
     autocomplete_fields = ["behavior"]
+
+    def get_extra(self, request, obj=None, **kwargs):
+        return 0
 
 
 @admin.register(models.CheckIn)
